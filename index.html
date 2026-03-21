@@ -2,159 +2,125 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>CIESVIT - Ágora Digital</title>
+<title>CIESVIT - Convocatoria</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-/* Reset y body */
 body {
   margin: 0;
-  background: #0B0B0F;
   font-family: 'Inter', sans-serif;
   color: #111;
-  scroll-behavior: smooth;
+  background-color: #F4F4F6;
+  background-image: radial-gradient(circle, #D8D8D8 1px, transparent 1px);
+  background-size: 20px 20px;
+  max-width: 210mm; /* ancho A4 */
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Header fijo y navegación */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #6E6A7E;
-  z-index: 999;
-  padding: 10px 0;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-}
-
-nav {
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  font-family: 'Inter', sans-serif;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #F4F4F6;
-}
-
-/* Hero */
 .hero {
-  background: linear-gradient(135deg, #6E6A7E, #4B4660);
-  padding: 160px 20px 80px;
-  text-align: center;
+  background: #6E6A7E;
   color: white;
+  padding: 80px 40px;
+  text-align: center;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 48px;
+  font-size: 36px;
   margin: 0;
   letter-spacing: 2px;
 }
 
-/* Container principal */
-.container {
-  background: #F4F4F6;
-  max-width: 900px;
-  margin: -60px auto 80px;
-  padding: 80px 40px;
+/* Bloques de color */
+.section-block {
+  border-radius: 8px;
+  padding: 30px 40px;
+  margin-bottom: 30px;
   line-height: 1.7;
   font-size: 18px;
-  border-radius: 12px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
 }
 
-/* Títulos internos */
-.container h2 {
+.section-block.light {
+  background: #E0E0E0;
+}
+
+.section-block.medium {
+  background: #D4D0DD; /* un violeta claro de la paleta */
+}
+
+.section-block.dark {
+  background: #B5B1C0; /* más profundo, pero sobrio */
+  color: white;
+}
+
+h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  margin-top: 50px;
+  font-size: 28px;
+  margin-top: 0;
   margin-bottom: 20px;
   color: #333;
-  border-bottom: 2px solid #6E6A7E;
-  padding-bottom: 6px;
 }
 
-/* Párrafos y listas */
-.container p {
-  margin-bottom: 20px;
+/* Dos columnas */
+.two-columns {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-.container ul {
-  margin-left: 20px;
-  margin-bottom: 20px;
+.column {
+  flex: 1;
 }
 
-/* Links de correo */
-.container a.email-link {
-  color: #6E6A7E;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.container a.email-link:hover {
-  text-decoration: underline;
-}
-
-/* Botones */
 .button-apply {
   display: inline-block;
   background: #6E6A7E;
   color: white;
   padding: 12px 25px;
-  margin-top: 20px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
-  transition: background 0.3s;
+  margin-top: 20px;
 }
 
-.button-apply:hover {
-  background: #5b556e;
+.fecha-box {
+  display: inline-block;
+  background: #F4F4F6;
+  color: #111;
+  padding: 8px 12px;
+  margin: 4px 4px 4px 0;
+  border-radius: 4px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
 }
 
-/* Footer */
 .footer {
   text-align: center;
   color: #888;
   padding: 40px;
   font-size: 16px;
+  font-weight: 600;
 }
 
-/* Iconos estilo minimal */
-.icon {
-  color: #6E6A7E;
-  margin-right: 8px;
-  font-weight: 700;
+.footer span.circuit {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #6E6A7E;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg>') no-repeat center;
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg>') no-repeat center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  margin-left: 6px;
+  vertical-align: middle;
 }
 </style>
 </head>
 
 <body>
-
-<header>
-  <nav>
-    <a href="#convocatoria">Convocatoria</a>
-    <a href="#llamado">Llamado</a>
-    <a href="#objetivos">Objetivos</a>
-    <a href="#lineas">Líneas</a>
-    <a href="#dirigido">Dirigido</a>
-    <a href="#modalidades">Modalidades</a>
-    <a href="#beneficios">Beneficios</a>
-    <a href="#aplicar">Aplicar</a>
-    <a href="#fechas">Fechas</a>
-  </nav>
-</header>
 
 <div class="hero">
   <h1>CÍRCULO DE ESTUDIOS VITALISTAS</h1>
@@ -162,71 +128,63 @@ nav a:hover {
 
 <div class="container">
 
-<h2 id="convocatoria">📢 Convocatoria de Colaboración Espontánea</h2>
-<p>El Círculo de Estudios Vitalistas (CIESVIT) es un espacio independiente de investigación, escritura y divulgación que articula pensamiento contemporáneo en entornos digitales. A través de seminarios, publicaciones y encuentros virtuales, promovemos el diálogo filosófico dentro y fuera del vitalismo.</p>
+<div class="section-block dark">
+<h2>Convocatoria de Colaboración espontánea</h2>
+<p>CIESVIT es un espacio de investigación, divulgación y escritura colaborativa sobre filosofía y pensamiento contemporáneo que atraviesa la actualidad de pensadores dentro y fuera del vitalismo filosófico. Creamos webinars sobre temas filosóficos y organizamos sesiones en línea sobre corrientes de pensamiento actuales. Funcionamos como una colectividad independiente que genera contenido académico y promueve discusiones filosóficas en modalidad virtual.</p>
+</div>
 
-<h2 id="llamado">🧩 Llamado</h2>
-<p>Invitamos a filósofas/os, humanistas, investigadoras/es y creadoras/es con proyectos en desarrollo a integrarse en actividades de investigación, producción y difusión de pensamiento filosófico y humanístico.</p>
+<!-- Dos columnas con bloques -->
+<div class="two-columns">
+  <div class="column">
+    <div class="section-block light">
+      <h2>Llamado</h2>
+      <p>Ciesvit invita cordialmente a filósofas/os, humanistas, investigadores y estudiantes con proyectos avanzados a colaborar en actividades de investigación, divulgación y producción de contenidos filosóficos y humanísticos.</p>
+    </div>
+    <div class="section-block medium">
+      <h2>Objetivos</h2>
+      <p>Fortalecer la reflexión filosófica contemporánea a través de seminarios, diálogos, artículos digitales y contenidos de divulgación destinados a plataformas digitales.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="section-block medium">
+      <h2>Líneas de trabajo</h2>
+      <p>Filosofía contemporánea, intersecciones entre filosofía, tecnología, ciencia y sociedad, y publicación de ensayos, reseñas y contenido de divulgación para medios digitales.</p>
+    </div>
+    <div class="section-block light">
+      <h2>Dirigido a</h2>
+      <p>Estudiantes avanzadas/os en filosofía y/o humanidades, investigadoras/es y docentes en filosofía, creadoras/es de contenido filosófico para redes y canales digitales, con habilidades en análisis crítico, escritura académica y claridad expositiva.</p>
+    </div>
+  </div>
+</div>
 
-<h2 id="objetivos">🎯 Objetivos</h2>
+<div class="section-block dark">
+<h2>Modalidades y Beneficios</h2>
+<p>Colaboración en publicaciones digitales, contribución en seminarios en línea, proyectos de investigación colaborativa y realización de seminarios temáticos, divulgación y contenidos digitales orientados a públicos amplios, participación por invitación. Beneficios: difusión de investigación, conectividad con investigadores, certificado mediante microcredenciales POK, oportunidad de co-crear eventos con valor curricular, impartición de seminarios remunerados.</p>
+</div>
+
+<div class="section-block light">
+<h2>Cómo aplicar</h2>
+<p>Envía la documentación a <a class="button-apply" href="mailto:ciesvit@gmail.com">ciesvit@gmail.com</a></p>
 <ul>
-  <li>Fortalecer la reflexión filosófica contemporánea mediante seminarios, diálogos y artículos digitales.</li>
-  <li>Difundir contenidos de divulgación destinados a plataformas digitales.</li>
+  <li>CV académico o semblanza de investigadora/or</li>
+  <li>Propuesta de colaboración (máximo 1 página)</li>
+  <li>Propuesta de fechas de entrega o realización</li>
 </ul>
+</div>
 
-<h2 id="lineas">📌 Líneas de trabajo</h2>
-<ul>
-  <li>Filosofía contemporánea.</li>
-  <li>Intersecciones entre filosofía, tecnología, ciencia y sociedad.</li>
-  <li>Publicación de ensayos, reseñas y contenido de divulgación para medios digitales.</li>
-</ul>
-
-<h2 id="dirigido">👤 Dirigido a</h2>
-<ul>
-  <li>Estudiantes avanzadas/os en filosofía y/o humanidades.</li>
-  <li>Investigadoras/es y docentes en filosofía.</li>
-  <li>Creadoras/es y divulgadoras/es de contenido filosófico para redes y canales digitales.</li>
-  <li>Habilidades en análisis crítico, escritura académica y claridad expositiva.</li>
-</ul>
-
-<h2 id="modalidades">🔁 Modalidades de participación</h2>
-<ul>
-  <li>Colaboración en publicaciones digitales: artículos, ensayos o reseñas filosóficas y contenido para redes sociales.</li>
-  <li>Contribución en seminarios en línea: presentación y diálogo con audiencias en sesiones virtuales.</li>
-  <li>Presentación de proyectos de investigación colaborativa y realización de seminarios temáticos especializados conectados con el vitalismo filosófico u otras líneas.</li>
-  <li>Divulgación y contenidos digitales: textos o análisis filosóficos de formato divulgativo, orientados a públicos amplios.</li>
-  <li>Participación por invitación: emitimos una invitación dirigida.</li>
-</ul>
-
-<h2 id="beneficios">🌟 Beneficios</h2>
-<ul>
-  <li>Difusión de investigaciones en las plataformas de CIESVIT.</li>
-  <li>Conectividad con investigadores y colaboración académica.</li>
-  <li>Certificado de participación mediante microcredenciales POK.</li>
-  <li>Oportunidad de co-crear eventos y actividades académicas con valor curricular.</li>
-  <li>Impartición de seminarios remunerados con certificado de finalización.</li>
-</ul>
-
-<h2 id="aplicar">✉️ Cómo aplicar</h2>
-<p>Envía tu documentación a <a class="email-link" href="mailto:ciesvit@gmail.com">ciesvit@gmail.com</a>:</p>
-<ul>
-  <li>CV académico o semblanza de investigadora/or.</li>
-  <li>Propuesta de colaboración (máx. 1 página).</li>
-  <li>Propuesta de fechas de entrega o realización.</li>
-</ul>
-<a class="button-apply" href="mailto:ciesvit@gmail.com">Enviar propuesta</a>
-
-<h2 id="fechas">📅 Fechas importantes</h2>
-<ul>
-  <li>Apertura de convocatoria: siempre abierta.</li>
-  <li>Cierre de recepción de propuestas: sin límite de fecha.</li>
-  <li>Notificación de selección: mediante correo electrónico oficial de CIESVIT.</li>
-</ul>
+<div class="section-block medium">
+<h2>Fechas importantes</h2>
+<p>
+<span class="fecha-box">📅 Apertura de convocatoria: Siempre abierta</span>
+<span class="fecha-box">📅 Cierre de recepción de propuestas: Sin límite de fecha</span>
+<span class="fecha-box">📅 Notificación de selección: mediante correo electrónico oficial de CIESVIT</span>
+</p>
+</div>
 
 </div>
 
 <div class="footer">
-CIESVIT – Ágora Digital
+Ágora Digital CIESVIT <span class="circuit"></span>
 </div>
 
 </body>
