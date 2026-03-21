@@ -12,11 +12,36 @@ body {
   background: #0B0B0F;
   font-family: 'Inter', sans-serif;
   color: #111;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #6E6A7E;
+  z-index: 999;
+  padding: 10px 0;
+}
+
+nav {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
 }
 
 .hero {
   background: #6E6A7E;
-  padding: 120px 60px 80px;
+  padding: 140px 60px 80px;
   text-align: center;
   color: white;
 }
@@ -56,6 +81,16 @@ body {
   margin-bottom: 20px;
 }
 
+.container a.email-link {
+  color: #6E6A7E;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.container a.email-link:hover {
+  text-decoration: underline;
+}
+
 .footer {
   text-align: center;
   color: #888;
@@ -66,32 +101,46 @@ body {
 
 <body>
 
+<header>
+  <nav>
+    <a href="#convocatoria">Convocatoria</a>
+    <a href="#llamado">Llamado</a>
+    <a href="#objetivos">Objetivos</a>
+    <a href="#lineas">Líneas de trabajo</a>
+    <a href="#dirigido">Dirigido a</a>
+    <a href="#modalidades">Modalidades</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#aplicar">Cómo aplicar</a>
+    <a href="#fechas">Fechas</a>
+  </nav>
+</header>
+
 <div class="hero">
   <h1>CÍRCULO DE ESTUDIOS VITALISTAS</h1>
 </div>
 
 <div class="container">
 
-<h2>Convocatoria de Colaboración Espontánea</h2>
+<h2 id="convocatoria">Convocatoria de Colaboración Espontánea</h2>
 <p>El Círculo de Estudios Vitalistas (CIESVIT) es un espacio independiente de investigación, escritura y divulgación que articula pensamiento contemporáneo en entornos digitales. A través de seminarios, publicaciones y encuentros virtuales, promovemos el diálogo filosófico dentro y fuera del vitalismo.</p>
 
-<h2>Llamado</h2>
+<h2 id="llamado">Llamado</h2>
 <p>Invitamos a filósofas/os, humanistas, investigadoras/es y creadoras/es con proyectos en desarrollo a integrarse en actividades de investigación, producción y difusión de pensamiento filosófico y humanístico.</p>
 
-<h2>Objetivos</h2>
+<h2 id="objetivos">Objetivos</h2>
 <ul>
   <li>Fortalecer la reflexión filosófica contemporánea mediante seminarios, diálogos y artículos digitales.</li>
   <li>Difundir contenidos de divulgación destinados a plataformas digitales.</li>
 </ul>
 
-<h2>Líneas de trabajo</h2>
+<h2 id="lineas">Líneas de trabajo</h2>
 <ul>
   <li>Filosofía contemporánea.</li>
   <li>Intersecciones entre filosofía, tecnología, ciencia y sociedad.</li>
   <li>Publicación de ensayos, reseñas y contenido de divulgación para medios digitales.</li>
 </ul>
 
-<h2>Dirigido a</h2>
+<h2 id="dirigido">Dirigido a</h2>
 <ul>
   <li>Estudiantes avanzadas/os en filosofía y/o humanidades.</li>
   <li>Investigadoras/es y docentes en filosofía.</li>
@@ -99,7 +148,7 @@ body {
   <li>Habilidades en análisis crítico, escritura académica y claridad expositiva.</li>
 </ul>
 
-<h2>Modalidades de participación</h2>
+<h2 id="modalidades">Modalidades de participación</h2>
 <ul>
   <li>Colaboración en publicaciones digitales: artículos, ensayos o reseñas filosóficas y contenido para redes sociales.</li>
   <li>Contribución en seminarios en línea: presentación y diálogo con audiencias en sesiones virtuales.</li>
@@ -108,7 +157,7 @@ body {
   <li>Participación por invitación: emitimos una invitación dirigida.</li>
 </ul>
 
-<h2>Beneficios</h2>
+<h2 id="beneficios">Beneficios</h2>
 <ul>
   <li>Difusión de investigaciones en las plataformas de CIESVIT.</li>
   <li>Conectividad con investigadores y colaboración académica.</li>
@@ -117,15 +166,15 @@ body {
   <li>Impartición de seminarios remunerados con certificado de finalización.</li>
 </ul>
 
-<h2>Cómo aplicar</h2>
-<p>Envía la siguiente documentación a <strong>ciesvit@gmail.com</strong>:</p>
+<h2 id="aplicar">Cómo aplicar</h2>
+<p>Envía la siguiente documentación a <a class="email-link" href="mailto:ciesvit@gmail.com">ciesvit@gmail.com</a>:</p>
 <ul>
   <li>CV académico o semblanza de investigadora/or.</li>
-  <li>Propuesta de colaboración (máximo 1 página).</li>
+  <li>Propuesta de colaboración (máx. 1 página).</li>
   <li>Propuesta de fechas de entrega o realización.</li>
 </ul>
 
-<h2>Fechas importantes</h2>
+<h2 id="fechas">Fechas importantes</h2>
 <ul>
   <li>Apertura de convocatoria: siempre abierta.</li>
   <li>Cierre de recepción de propuestas: sin límite de fecha.</li>
