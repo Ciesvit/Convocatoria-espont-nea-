@@ -3,78 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <title>CIESVIT - Convocatoria</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
 <style>
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   color: #111;
-  background-color: #F4F4F6;
+  background-color: #F4F4F6; /* fondo punteado */
   background-image: radial-gradient(circle, #D8D8D8 1px, transparent 1px);
   background-size: 20px 20px;
-  max-width: 210mm; /* ancho A4 */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero {
-  background: #6E6A7E;
-  color: white;
-  padding: 80px 40px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 36px;
-  margin: 0;
-  letter-spacing: 2px;
 }
 
 /* Bloques de color */
-.section-block {
-  border-radius: 8px;
-  padding: 30px 40px;
-  margin-bottom: 30px;
-  line-height: 1.7;
+.block {
+  padding: 40px;
+  line-height: 1.6;
   font-size: 18px;
-}
-
-.section-block.light {
-  background: #E0E0E0;
-}
-
-.section-block.medium {
-  background: #D4D0DD; /* un violeta claro de la paleta */
-}
-
-.section-block.dark {
-  background: #B5B1C0; /* más profundo, pero sobrio */
-  color: white;
-}
-
-h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  margin-top: 0;
+  white-space: pre-wrap;
+  color: #111;
+  border-radius: 8px;
   margin-bottom: 20px;
-  color: #333;
 }
 
-/* Dos columnas */
-.two-columns {
+.block-horizontal { width: 100%; }
+
+.block-vertical-container {
   display: flex;
-  gap: 40px;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
-.column {
-  flex: 1;
-}
+.block-vertical { flex: 1; padding: 30px; }
 
+/* Colores de la paleta */
+.color1 { background-color: #6E6A7E; color: white; } /* violeta oscuro */
+.color2 { background-color: #D4D0DD; }               /* violeta claro */
+.color3 { background-color: #E0E0E0; }               /* gris claro */
+
+/* Títulos */
+h1, h2 { font-family: 'Playfair Display', serif; margin-top: 0; }
+h1 { font-size: 36px; text-align: center; letter-spacing: 2px; }
+h2 { font-size: 28px; margin-bottom: 20px; }
+
+/* Botón */
 .button-apply {
   display: inline-block;
   background: #6E6A7E;
@@ -83,9 +54,10 @@ h2 {
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
+/* Fechas */
 .fecha-box {
   display: inline-block;
   background: #F4F4F6;
@@ -94,9 +66,9 @@ h2 {
   margin: 4px 4px 4px 0;
   border-radius: 4px;
   font-weight: 500;
-  font-family: 'Inter', sans-serif;
 }
 
+/* Footer */
 .footer {
   text-align: center;
   color: #888;
@@ -104,87 +76,74 @@ h2 {
   font-size: 16px;
   font-weight: 600;
 }
-
-.footer span.circuit {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  background: #6E6A7E;
-  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg>') no-repeat center;
-  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg>') no-repeat center;
-  mask-size: contain;
-  -webkit-mask-size: contain;
-  margin-left: 6px;
-  vertical-align: middle;
-}
 </style>
 </head>
-
 <body>
 
-<div class="hero">
-  <h1>CÍRCULO DE ESTUDIOS VITALISTAS</h1>
+<!-- Bloque horizontal superior -->
+<div class="block block-horizontal color1">
+<h1>CÍRCULO DE ESTUDIOS VITALISTAS</h1>
+<p>📢 <strong>Convocatoria de Colaboración espontánea:</strong> del Círculo de Estudios Vitalistas.
+
+CIESVIT es un espacio de investigación, divulgación y escritura colaborativa sobre filosofía y pensamiento contemporáneo que atraviesa la actualidad de pensadores dentro y fuera del vitalismo filosófico.
+Creamos webinars sobre temas filosóficos y organizamos sesiones en línea sobre corrientes de pensamiento actuales.
+Funcionamos como una colectividad independiente que genera contenido académico y promueve discusiones filosóficas en modalidad virtual, con correo de contacto y eventos programados.</p>
 </div>
 
-<div class="container">
+<!-- Bloques verticales -->
+<div class="block-vertical-container">
+  <div class="block-vertical color2">
+<p><strong>Llamado:</strong>
+Ciesvit invita cordialmente a filósofas/os, humanistas, investigadores y estudiantes con proyectos avanzados a colaborar en actividades de investigación, divulgación y producción de contenidos filosóficos y humanísticos.</p>
 
-<div class="section-block dark">
-<h2>Convocatoria de Colaboración espontánea</h2>
-<p>CIESVIT es un espacio de investigación, divulgación y escritura colaborativa sobre filosofía y pensamiento contemporáneo que atraviesa la actualidad de pensadores dentro y fuera del vitalismo filosófico. Creamos webinars sobre temas filosóficos y organizamos sesiones en línea sobre corrientes de pensamiento actuales. Funcionamos como una colectividad independiente que genera contenido académico y promueve discusiones filosóficas en modalidad virtual.</p>
-</div>
+<p><strong>Objetivos:</strong>
+Fortalecer la reflexión filosófica contemporánea a través de seminarios, diálogos, artículos digitales y contenidos de divulgación destinados a plataformas digitales.</p>
 
-<!-- Dos columnas con bloques -->
-<div class="two-columns">
-  <div class="column">
-    <div class="section-block light">
-      <h2>Llamado</h2>
-      <p>Ciesvit invita cordialmente a filósofas/os, humanistas, investigadores y estudiantes con proyectos avanzados a colaborar en actividades de investigación, divulgación y producción de contenidos filosóficos y humanísticos.</p>
-    </div>
-    <div class="section-block medium">
-      <h2>Objetivos</h2>
-      <p>Fortalecer la reflexión filosófica contemporánea a través de seminarios, diálogos, artículos digitales y contenidos de divulgación destinados a plataformas digitales.</p>
-    </div>
+<p><strong>Líneas de trabajo:</strong>
+Filosofía contemporánea.
+Intersecciones entre filosofía, tecnología, ciencia y sociedad.
+Publicación de ensayos, reseñas y contenido de divulgación para medios digitales.</p>
   </div>
-  <div class="column">
-    <div class="section-block medium">
-      <h2>Líneas de trabajo</h2>
-      <p>Filosofía contemporánea, intersecciones entre filosofía, tecnología, ciencia y sociedad, y publicación de ensayos, reseñas y contenido de divulgación para medios digitales.</p>
-    </div>
-    <div class="section-block light">
-      <h2>Dirigido a</h2>
-      <p>Estudiantes avanzadas/os en filosofía y/o humanidades, investigadoras/es y docentes en filosofía, creadoras/es de contenido filosófico para redes y canales digitales, con habilidades en análisis crítico, escritura académica y claridad expositiva.</p>
-    </div>
+
+  <div class="block-vertical color3">
+<p><strong>Dirigo a:</strong>
+Estudiantes avanzadas/os en filosofía y/o humanidades.
+Investigadoras/es y docentes en filosofía.
+Creadoras/es, divulgadoras/es de contenido filosófico para redes y canales digitales.
+Habilidades en análisis crítico, escritura académica y claridad expositiva.</p>
+
+<p><strong>Modalidades de participación:</strong>
+- Colaboración en publicaciones digitales: Artículos, ensayos o reseñas filosóficas y contenido para redes sociales.
+- Contribución en seminarios en línea: Presentación y diálogo con audiencias en sesiones virtuales.
+- Presentación de proyectos de investigación colaborativa y realización de seminarios temáticos. Estudios especializados conectados con el vitalismo filosófico u otras líneas que lo atraviesen.
+- Divulgación y contenidos digitales: Textos o análisis filosóficos de formato micro aprendizaje, orientados a públicos amplios.
+- Participación por invitación: Emitimos una invitación dirigida.</p>
+
+<p><strong>Beneficios:</strong>
+Difusión de trabajos en las plataformas de CIESVIT.
+Networking con investigadores y colaboradores de humanidades.
+Certificado de colaboración través de micro credenciales POK.
+Oportunidad de co-crear eventos y actividades académicas con valor curricular.
+Impartición de seminarios remunerados con certificado de finalización.</p>
   </div>
 </div>
 
-<div class="section-block dark">
-<h2>Modalidades y Beneficios</h2>
-<p>Colaboración en publicaciones digitales, contribución en seminarios en línea, proyectos de investigación colaborativa y realización de seminarios temáticos, divulgación y contenidos digitales orientados a públicos amplios, participación por invitación. Beneficios: difusión de investigación, conectividad con investigadores, certificado mediante microcredenciales POK, oportunidad de co-crear eventos con valor curricular, impartición de seminarios remunerados.</p>
-</div>
+<!-- Bloque horizontal final -->
+<div class="block block-horizontal color2">
+<p><strong>Cómo aplicar:</strong>
+Envía la siguiente documentación a <a class="button-apply" href="mailto:ciesvit@gmail.com">ciesvit@gmail.com</a>.
+📌 CV académico o semblanza de investigadora/or.
+📌 Propuesta de colaboración (máximo 1 página).
+📌 Propuesta de fechas de entrega o realización.</p>
 
-<div class="section-block light">
-<h2>Cómo aplicar</h2>
-<p>Envía la documentación a <a class="button-apply" href="mailto:ciesvit@gmail.com">ciesvit@gmail.com</a></p>
-<ul>
-  <li>CV académico o semblanza de investigadora/or</li>
-  <li>Propuesta de colaboración (máximo 1 página)</li>
-  <li>Propuesta de fechas de entrega o realización</li>
-</ul>
-</div>
-
-<div class="section-block medium">
-<h2>Fechas importantes</h2>
-<p>
-<span class="fecha-box">📅 Apertura de convocatoria: Siempre abierta</span>
-<span class="fecha-box">📅 Cierre de recepción de propuestas: Sin límite de fecha</span>
-<span class="fecha-box">📅 Notificación de selección: mediante correo electrónico oficial de CIESVIT</span>
-</p>
-</div>
-
+<p><strong>Fechas importantes:</strong>
+<span class="fecha-box">📅 Apertura de convocatoria: Siempre abierta.</span>
+<span class="fecha-box">📅 Cierre de recepción de propuestas: Sin límite de fecha.</span>
+<span class="fecha-box">📅 Notificación de selección: mediante correo electrónico oficial de CIESVIT.</span></p>
 </div>
 
 <div class="footer">
-Ágora Digital CIESVIT <span class="circuit"></span>
+Ágora Digital CIESVIT
 </div>
 
 </body>
