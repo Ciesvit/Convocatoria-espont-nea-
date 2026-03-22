@@ -4,28 +4,31 @@
 <meta charset="UTF-8">
 <title>CIESVIT - Convocatoria</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  color: #111;
-  background-color: #F4F4F6; /* fondo punteado */
+  background-color: #F4F4F6;
   background-image: radial-gradient(circle, #D8D8D8 1px, transparent 1px);
   background-size: 20px 20px;
 }
 
-/* Bloques de color */
-.block {
-  padding: 40px;
-  line-height: 1.6;
-  font-size: 18px;
-  white-space: pre-wrap;
-  color: #111;
-  border-radius: 8px;
-  margin-bottom: 20px;
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
-.block-horizontal { width: 100%; }
+.block {
+  padding: 40px;
+  line-height: 1.7;
+  font-size: 18px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 .block-vertical-container {
   display: flex;
@@ -33,117 +36,119 @@ body {
   margin-bottom: 20px;
 }
 
-.block-vertical { flex: 1; padding: 30px; }
+.block-vertical {
+  flex: 1;
+  padding: 30px;
+  text-align: justify;
+}
 
-/* Colores de la paleta */
-.color1 { background-color: #6E6A7E; color: white; } /* violeta oscuro */
-.color2 { background-color: #D4D0DD; }               /* violeta claro */
-.color3 { background-color: #E0E0E0; }               /* gris claro */
+.color1 { background-color: #6E6A7E; color: white; }
+.color2 { background-color: #D4D0DD; }
+.color3 { background-color: #E0E0E0; }
 
-/* Títulos */
-h1, h2 { font-family: 'Playfair Display', serif; margin-top: 0; }
-h1 { font-size: 36px; text-align: center; letter-spacing: 2px; }
-h2 { font-size: 28px; margin-bottom: 20px; }
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
 
-/* Botón */
+.logo-bottom {
+  display: block;
+  margin: 30px auto 10px auto;
+  width: 120px;
+  opacity: 0.65;
+}
+
 .button-apply {
   display: inline-block;
   background: #6E6A7E;
   color: white;
-  padding: 12px 25px;
+  padding: 10px 20px;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: 600;
-  margin-top: 10px;
 }
 
-/* Fechas */
 .fecha-box {
-  display: inline-block;
   background: #F4F4F6;
-  color: #111;
-  padding: 8px 12px;
-  margin: 4px 4px 4px 0;
+  padding: 6px 10px;
+  margin: 6px 0;
   border-radius: 4px;
-  font-weight: 500;
+  display: block;
+  width: fit-content;
 }
 
-/* Footer */
 .footer {
   text-align: center;
-  color: #888;
-  padding: 40px;
-  font-size: 16px;
-  font-weight: 600;
+  padding: 20px;
+  color: #666;
+}
+
+.left-align {
+  text-align: left;
 }
 </style>
 </head>
+
 <body>
 
-<!-- Bloque horizontal superior -->
-<div class="block block-horizontal color1">
+<div class="wrapper">
+
+<div class="block color1">
 <h1>CÍRCULO DE ESTUDIOS VITALISTAS</h1>
-<p>📢 <strong>Convocatoria de Colaboración espontánea:</strong> del Círculo de Estudios Vitalistas.
 
-CIESVIT es un espacio de investigación, divulgación y escritura colaborativa sobre filosofía y pensamiento contemporáneo que atraviesa la actualidad de pensadores dentro y fuera del vitalismo filosófico.
-Creamos webinars sobre temas filosóficos y organizamos sesiones en línea sobre corrientes de pensamiento actuales.
-Funcionamos como una colectividad independiente que genera contenido académico y promueve discusiones filosóficas en modalidad virtual, con correo de contacto y eventos programados.</p>
+<p><strong>Convocatoria de Colaboración espontánea.</strong></p>
+
+<p>CIESVIT es un espacio de investigación, divulgación y escritura colaborativa sobre filosofía y pensamiento contemporáneo que atraviesa la actualidad de pensadores dentro y fuera del vitalismo filosófico. Creamos webinars sobre temas filosóficos y organizamos sesiones en línea sobre corrientes de pensamiento actuales. Funcionamos como una colectividad independiente que genera contenido académico y promueve discusiones filosóficas en modalidad virtual, con correo de contacto y eventos programados.</p>
 </div>
 
-<!-- Bloques verticales -->
 <div class="block-vertical-container">
-  <div class="block-vertical color2">
-<p><strong>Llamado:</strong>
-Ciesvit invita cordialmente a filósofas/os, humanistas, investigadores y estudiantes con proyectos avanzados a colaborar en actividades de investigación, divulgación y producción de contenidos filosóficos y humanísticos.</p>
 
-<p><strong>Objetivos:</strong>
-Fortalecer la reflexión filosófica contemporánea a través de seminarios, diálogos, artículos digitales y contenidos de divulgación destinados a plataformas digitales.</p>
+<div class="block-vertical color2">
+<p><strong>Llamado:</strong> Ciesvit invita cordialmente a filósofas/os, humanistas, investigadores y estudiantes con proyectos avanzados a colaborar en actividades de investigación, divulgación y producción de contenidos filosóficos y humanísticos.</p>
 
-<p><strong>Líneas de trabajo:</strong>
-Filosofía contemporánea.
-Intersecciones entre filosofía, tecnología, ciencia y sociedad.
-Publicación de ensayos, reseñas y contenido de divulgación para medios digitales.</p>
-  </div>
+<p><strong>Objetivos:</strong> Fortalecer la reflexión filosófica contemporánea a través de seminarios, diálogos, artículos digitales y contenidos de divulgación destinados a plataformas digitales.</p>
 
-  <div class="block-vertical color3">
-<p><strong>Dirigo a:</strong>
-Estudiantes avanzadas/os en filosofía y/o humanidades.
-Investigadoras/es y docentes en filosofía.
-Creadoras/es, divulgadoras/es de contenido filosófico para redes y canales digitales.
-Habilidades en análisis crítico, escritura académica y claridad expositiva.</p>
-
-<p><strong>Modalidades de participación:</strong>
-- Colaboración en publicaciones digitales: Artículos, ensayos o reseñas filosóficas y contenido para redes sociales.
-- Contribución en seminarios en línea: Presentación y diálogo con audiencias en sesiones virtuales.
-- Presentación de proyectos de investigación colaborativa y realización de seminarios temáticos. Estudios especializados conectados con el vitalismo filosófico u otras líneas que lo atraviesen.
-- Divulgación y contenidos digitales: Textos o análisis filosóficos de formato micro aprendizaje, orientados a públicos amplios.
-- Participación por invitación: Emitimos una invitación dirigida.</p>
-
-<p><strong>Beneficios:</strong>
-Difusión de trabajos en las plataformas de CIESVIT.
-Networking con investigadores y colaboradores de humanidades.
-Certificado de colaboración través de micro credenciales POK.
-Oportunidad de co-crear eventos y actividades académicas con valor curricular.
-Impartición de seminarios remunerados con certificado de finalización.</p>
-  </div>
+<p><strong>Líneas de trabajo:</strong> Filosofía contemporánea. Intersecciones entre filosofía, tecnología, ciencia y sociedad.</p>
 </div>
 
-<!-- Bloque horizontal final -->
-<div class="block block-horizontal color2">
-<p><strong>Cómo aplicar:</strong>
-Envía la siguiente documentación a <a class="button-apply" href="mailto:ciesvit@gmail.com">ciesvit@gmail.com</a>.
-📌 CV académico o semblanza de investigadora/or.
-📌 Propuesta de colaboración (máximo 1 página).
-📌 Propuesta de fechas de entrega o realización.</p>
+<div class="block-vertical color3">
+<p><strong>Dirigo a:</strong> Estudiantes avanzadas/os en filosofía y/o humanidades. Investigadoras/es y docentes en filosofía. Creadoras/es, divulgadoras/es de contenido filosófico para redes y caneles digitales con habilidades en análisis crítico, escritura académica, síntesis y claridad expositiva.</p>
 
-<p><strong>Fechas importantes:</strong>
-<span class="fecha-box">📅 Apertura de convocatoria: Siempre abierta.</span>
-<span class="fecha-box">📅 Cierre de recepción de propuestas: Sin límite de fecha.</span>
-<span class="fecha-box">📅 Notificación de selección: mediante correo electrónico oficial de CIESVIT.</span></p>
+<p><strong>Modalidades de participación:</strong> Presentación y diálogo con audiencias en sesiones virtuales. - Presentación de proyectos de investigación colaborativa de estudios especializados conectados con el vitalismo filosófico u otras líneas que lo atraviesen. Creación de seminarios temáticos remunerados. - Creación de contenidos digitales: Textos o análisis filosóficos de formato microcontenido, orientados a públicos amplios.</p>
+
+<p><strong>Beneficios:</strong> Difusión de trabajos en las plataformas de CIESVIT. Networking con investigadores y colaboradores de humanidades. Certificado de colaboración través de micro credenciales POK. Oportunidad de co-crear eventos y actividades académicas con valor curricular. Recibir remuneración por seminarios realizados.</p>
+</div>
+
+</div>
+
+<div class="block color2 left-align">
+
+<p><strong>Cómo aplicar:</strong></p>
+
+<p>→ Envía la documentación a <a class="button-apply" href="mailto:ciesvit@gmail.com">ciesvit@gmail.com</a></p>
+
+<p>📌 CV académico o semblanza de investigadora/or.</p>
+<p>📌 Propuesta de colaboración (máximo 1 página).</p>
+<p>📌 Propuesta de fechas de entrega o realización.</p>
+
+<p>📩 Emitimos una invitación dirigida.</p>
+
+<p><strong>Fechas importantes:</strong></p>
+
+<p class="fecha-box">📅 Apertura de convocatoria: Siempre abierta.</p>
+<p class="fecha-box">📅 Cierre de recepción de propuestas: Sin límite de fecha.</p>
+<p class="fecha-box">📅 Notificación de selección: mediante correo electrónico oficial de CIESVIT.</p>
+
+<img src="logo.png" class="logo-bottom">
+
 </div>
 
 <div class="footer">
 Ágora Digital CIESVIT
+</div>
+
 </div>
 
 </body>
