@@ -129,6 +129,38 @@ li::before {
   padding: 40px;
   color: #6F6F6F;
 }
+  .image-container {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 80px 0;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 520px;
+  opacity: 0.85;
+  filter: contrast(110%) brightness(90%);
+}
+
+.image-container::before,
+.image-container::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #8A8A8A;
+}
+
+.image-container::before {
+  top: 0;
+  left: calc(50% - 260px);
+}
+
+.image-container::after {
+  bottom: 0;
+  right: calc(50% - 260px);
+}
 </style>
 </head>
 
