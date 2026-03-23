@@ -15,30 +15,15 @@ body {
   text-align: center;
 }
 
-/* HEADER */
+/* HEADER BLOQUE */
 .header-fijo {
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.header-fijo-inner {
-  background: #071F1F;
-  padding: 25px 20px;
-  color: #D6C28A;
-  border-bottom: 1px solid #6F6F6F;
-}
-
-.logo-top {
-  width: 48px;
-  margin-bottom: 10px;
-  opacity: 0.85;
-}
-
 /* FRANJA IMAGEN */
 .franja-imagen {
-  position: sticky;
-  top: 110px;
   width: 100%;
   height: 120px;
   background-image: url('imagen.PNG');
@@ -46,7 +31,35 @@ body {
   background-position: center 70%;
   background-repeat: no-repeat;
   opacity: 0.6;
-  z-index: 500;
+}
+
+/* HEADER INTERNO */
+.header-fijo-inner {
+  position: relative;
+  background: #071F1F;
+  padding: 20px;
+  color: #D6C28A;
+  border-bottom: 1px solid #6F6F6F;
+}
+
+/* CUADRITOS */
+.header-fijo-inner::before,
+.header-fijo-inner::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #8A8A8A;
+}
+
+.header-fijo-inner::before {
+  top: 12px;
+  left: 12px;
+}
+
+.header-fijo-inner::after {
+  bottom: 12px;
+  right: 12px;
 }
 
 /* CONTENIDO */
@@ -63,7 +76,7 @@ body {
   line-height: 1.9;
 }
 
-/* TITULOS */
+/* TIPOGRAFÍA */
 h1, h2 {
   font-family: 'Space Grotesk', sans-serif;
 }
@@ -150,17 +163,17 @@ li::before {
 
 <body>
 
-<!-- HEADER -->
+<!-- BLOQUE FIJO -->
 <div class="header-fijo">
+
+  <div class="franja-imagen"></div>
+
   <div class="header-fijo-inner">
-    <img src="logo.png" class="logo-top">
     <h1>CÍRCULO DE ESTUDIOS VITALISTAS</h1>
     <p><strong>Convocatoria de colaboración espontánea</strong></p>
   </div>
-</div>
 
-<!-- FRANJA -->
-<div class="franja-imagen"></div>
+</div>
 
 <!-- CONTENIDO -->
 <div class="wrapper">
